@@ -3,7 +3,6 @@ import { HeroSect } from "./components/HeroSect";
 import { ProjectSection } from "./components/ProjectSection";
 import { AboutMe } from "./components/AboutMe";
 import { ContactUs } from "./components/contactUs";
-import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <>
@@ -14,7 +13,6 @@ function App() {
           <AboutMe />
           <ContactUs />
         </div>
-        <Analytics/>
     </>
   );
 }
