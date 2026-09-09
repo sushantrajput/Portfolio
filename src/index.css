@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body {
+  @apply bg-paper text-ink font-sans antialiased;
+  font-feature-settings: "ss01";
+}
+
+/* focus visibility — keep it, recruiters tab through */
+:where(a, button):focus-visible {
+  outline: 2px solid #14584C;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* placeholder text you must replace before publishing */
+.fillme {
+  @apply bg-flagSoft text-flag px-1.5 py-0.5 rounded-[3px] border-b border-flag/40;
+}
+.fillme::before { content: "fill: "; @apply font-mono text-[.72em] opacity-70; }
+
+/* case-study prose */
+.prose-case p { @apply font-serif text-[1.0625rem] leading-[1.68] text-ink/90 max-w-read mb-4; }
+.prose-case li { @apply font-serif text-[1.0625rem] leading-[1.68] text-ink/90 mb-2; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}
