@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-*::-webkit-scrollbar{
-    display: none;
-    width:0;
+@layer base {
+  body {
+    /* Applies your custom gradient background globally */
+    @apply bg-deepBlue text-gray-200 font-sora;
+    scroll-behavior: smooth;
+  }
 }
 
-.custom-radius{
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
 }
-body{
-    scroll-behavior: smooth;
+
+.custom-radius {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
-.custom-stroke{
-    stroke:red!important;
+
+.custom-stroke {
+  stroke: red !important;
 }
