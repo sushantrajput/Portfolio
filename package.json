@@ -42,7 +42,10 @@
     "vite": "^6.0.5"
   },
   "description": "Product management portfolio of Sushant Kumar.",
-  "main": "eslint.config.js",
-  "author": "",
-  "license": "ISC"
+  "main": "api/server.js",
+  "author": "Sushant Kumar",
+  "license": "ISC",
+  "allowScripts": {
+    "esbuild": true
+  }
 }
